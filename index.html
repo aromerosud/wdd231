@@ -4,12 +4,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 231
-    </title>
+    <title>WDD 231 - Web Fronted Development I - Arturo Romero</title>
+    <meta name="description"
+        content="WDD231 - Web Fronted Development | Arturo Romero | Personal home page featuring projects created with HTML, CSS, and JavaScripts.">
+    <meta name="author" content="Arturo Romero">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 
 <body>
-    <h1>WDD 231 - Romero</h1>
+    <header>
+        <div class="header-top">
+            <div class="brand">
+                <img src="images/logo.jpg" alt="HTML Layout logo" width="128" height="128">
+                <span id="course-title">Zion Warriors</span>
+            </div>
+            <button id="menu" aria-label="Toggle navigation menu"></button>
+        </div>
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" class="active" title="Final Project">Home</a></li>
+                <li><a href="#" title="Final Project">Chamber Project</a></li>
+                <li><a href="#" title="Final Project">Final Project</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <section class="card card-left">
+            <div class="title-section">About Me</div>
+            <div class="action-up">
+                <p class="text-about">
+                    It is a pleasure to meet each of you. My name is Arturo Romero, and I am from Lima, Peru. I am happy
+                    for
+                    the
+                    opportunity to study at BYU-Idaho Online along with you and to keep progressing. I have three
+                    children,
+                    I
+                    got married in 2015, I served a mission in Peru Arequipa, and I have had the opportunity to serve in
+                    some
+                    callings in my
+                    ward and stake. I am currently serving as a counselor in the Elders Quorum. I like instrumental
+                    music,
+                    basketball,
+                    series, comics, and anime, but above all, I enjoy spending time with my family. At the moment, I am
+                    learning
+                    English
+                    and Portuguese.
+                </p>
+            </div>
+        </section>
+        <section class="card card-right">
+            <div class="title-section">Student Photo</div>
+            <img class="photo-perfil" src="images/profile.jpg" alt="Profile photo of Arturo Romero">
+        </section>
+        <section class="card-courses">
+            <div class="title-section">Web Certificate Courses</div>
+            <div class="action-up">
+                <button class="btn-certificate" id="all">All</button>
+                <button class="btn-certificate" id="cse">CSE</button>
+                <button class="btn-certificate" id="wdd">WDD</button>
+            </div>
+            <div class="action-down"></div>
+            <span id="total-credits"></span>
+        </section>
+    </main>
+    <footer>
+        <div class="action-up">
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" alt="LinkedIn Icon">
+            </a>
+            <a href="#">
+                <img src="images/github.svg" alt="Github Icon">
+            </a>
+            <a href="#">
+                <img src="images/x-twitter.svg" alt="X Icon">
+            </a>
+        </div>
+        <div class="footer-down">
+            <p>
+                <span id="currentyear"></span> 🌊 Arturo Antonio Romero 🌊 Lima, Perú
+            </p>
+            <p class="datelastmodified">
+                Last Modification:<span id="lastModified"></span>
+            </p>
+        </div>
+
+    </footer>
 </body>
 
 </html>
