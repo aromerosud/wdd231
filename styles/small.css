@@ -5,8 +5,10 @@
     --accent-red: #dc2626;
     --body-color: #ffffff;
     --header-color: #ffffff;
+    --primary-text-color: #ffffff;
     --section-color: #f1f5f9;
-    --text-color: #1f2937;
+    --secundary-text-color: #1f2937;
+    --shadow-color: #333;
 }
 
 * {
@@ -19,7 +21,7 @@ body {
     margin: 0 auto;
     font-family: 'Roboto', sans-serif;
     background-color: var(--body-color);
-    color: var(--text-color);
+    color: var(--secundary-text-color);
 }
 
 .main {
@@ -70,13 +72,13 @@ header {
     margin: 15px;
     margin-top: 1rem;
     border: 1px solid rgb(0, 0, 0, 3);
-    box-shadow: 0 0 10px #333;
+    box-shadow: 0 0 10px var(--shadow-color);
     border-radius: .5rem;
 }
 
 .btn-certificate {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--primary-text-color);
     border: none;
     border-radius: .5rem;
     padding: 5px;
@@ -95,7 +97,7 @@ header {
 
 .courses {
     background-color: var(--primary-color);
-    color: #fff;
+    color: var(--primary-text-color);
     padding: 5px;
     margin: 5px 0px;
 }
@@ -111,7 +113,7 @@ header {
     font-size: 2rem;
     border: 0;
     background: none;
-    color: #110b36;
+    color: var(--secundary-text-color);
     cursor: pointer;
     background-color: var(--section-color);
 }
@@ -131,17 +133,17 @@ nav {
 }
 
 .navigation {
-    display: flex;
+    display: none;
     flex-direction: column;
     list-style: none;
     align-items: stretch;
     background-color: var(--secondary-color);
-    color: #f8f7f7;
+    color: var(--primary-text-color);
 }
 
 
 .navigation a {
-    color: #ffffff;
+    color: var(--primary-text-color);
     padding: 0.75rem 1rem;
     text-decoration: none;
     display: block;
@@ -150,7 +152,7 @@ nav {
 
 .navigation a:hover {
     background-color: var(--primary-color);
-    color: #ffffff;
+    color: var(--primary-text-color);
     font-weight: 700;
 }
 
@@ -159,9 +161,8 @@ nav {
     font-weight: 600;
 }
 
-.open a {
-    display: block;
-    font-size: 1.2rem;
+.navigation.open {
+    display: flex;
 }
 
 section {
@@ -179,16 +180,9 @@ h1 {
     padding: 0px 10px;
 }
 
-.label {
-    font-size: small;
-    text-align: center;
-    padding: 5px;
-    color: #350357;
-}
-
 .title-section {
     background-color: var(--secondary-color);
-    color: #f8f7f7;
+    color: var(--primary-text-color);
     padding: 7px;
 }
 
