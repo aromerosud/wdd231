@@ -27,6 +27,7 @@ header {
     gap: 10px;
     position: relative;
     padding: 1rem;
+    justify-content: center;
 }
 
 header img {
@@ -48,6 +49,7 @@ header img {
     border: 0;
     background: none;
     color: #fff;
+    
 }
 
 #menu::before {
@@ -56,6 +58,9 @@ header img {
 
 #menu.open::before {
     content: "X";
+    position: absolute;
+    top: 10%;
+    right: 1rem;
 }
 
 .navigation {
