@@ -1,0 +1,101 @@
+@media screen and (min-width: 750px) {
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    header img {
+        flex: 0 0 auto;
+    }
+
+    header img:first-of-type {
+        order: 1;
+    }
+
+    #chamber-title {
+        order: 2;
+        flex: 0 0 auto;
+        width: auto;
+        white-space: nowrap;
+    }
+
+    nav {
+        order: 3;
+        margin-left: auto;
+    }
+
+    .navigation {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navigation a {
+        display: block;
+        padding: 0.75rem 1rem;
+        font-size: 1rem;
+    }
+
+    header img:last-of-type {
+        order: 4;
+        margin-right: 1rem;
+    }
+
+    footer {
+        grid-template-columns: repeat(3, 1fr);
+        text-align: left;
+        align-items: center;
+    }
+
+    .social-media {
+        justify-content: center;
+    }
+
+
+    #cards.list {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    #cards.list section {
+        display: grid;
+        grid-template-columns: 2fr 3fr 1.5fr 2fr;
+        align-items: center;
+        padding: 0.6rem 1rem;
+        background-color: #f4f4f4;
+        border: 1px solid #ddd;
+    }
+
+    #cards.list img {
+        display: none;
+    }
+
+    #cards.list section:nth-child(even) {
+        background-color: #e9e9e9;
+    }
+
+    #cards.list h3 {
+        display: block;
+        font-size: 1rem;
+        font-weight: 700;
+        margin: 0;
+        color: #222;
+    }
+
+    #cards.list p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: #333;
+    }
+
+
+    #cards.list a:hover {
+        text-decoration: underline;
+    }
+
+}

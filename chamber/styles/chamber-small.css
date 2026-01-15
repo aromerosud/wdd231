@@ -1,0 +1,223 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-size-adjust: 0.5;
+}
+
+header,
+footer {
+    background-color: #57032a;
+    color: #eee;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    padding: 1rem;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+
+}
+
+#chamber-title {
+    flex: 1;
+    font-size: 1.2rem;
+    width: 100%;
+    align-items: center;
+}
+
+/* small view navigation */
+#menu {
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: #fff;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "X";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    list-style: none;
+    color: #fff;
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation a:hover {
+    background-color: #ffffff;
+    color: #350357;
+    font-weight: 700;
+}
+
+/* when the button is clicked - the open class is toggled (added/removed) */
+.open a {
+    display: block;
+    font-size: 1.5rem;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 0.5rem;
+    text-align: left;
+}
+
+footer>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    gap: 0.3rem;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 60px;
+    height: 60px;
+    aspect-ratio: 1 / 1;
+    padding: 10px;
+}
+
+#cards.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 1rem;
+}
+
+#cards.grid section {
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 0 10px #333;
+    min-height: 150px;
+}
+
+#cards.grid img {
+    max-width: 150px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+    margin: 1rem auto 0;
+}
+
+#cards.grid h3 {
+    display: none;
+}
+
+#cards.grid p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+#cards.grid a {
+    font-size: 0.9rem;
+    color: #0a4ea3;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#cards.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+#cards.list section {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.75rem;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+#cards.list img {
+    display: none;
+}
+
+#cards.list h3 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+#cards.list p,
+#cards.list a {
+    font-size: 0.9rem;
+}
+
+#cards.list a {
+    font-size: 0.9rem;
+    color: #0a4ea3;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin: 1.5rem auto;
+}
+
+.menu button {
+    padding: 0.5rem 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    background-color: #f4f4f4;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.menu button:hover {
+    background-color: #e0e0e0;
+}
+
+.menu button.active {
+    background-color: #110b36;
+    color: #fff;
+    border-color: #110b36;
+}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ficus Chamber of Commerce</title>
+    <meta name="description"
+        content="Explore the Chamber of Commerce business directory and find local businesses, professional services, and member companies in one place.">
+    <meta name="author" content="Arturo Romero">
+    <meta property="og:title" content="Business Directory | Chamber of Commerce">
+    <meta property="og:description"
+        content="Find local businesses, professional services, and Chamber members all in one trusted business directory.">
+    <meta property="og:image" content="URL-de-tu-imagen">
+    <meta property="og:url" content="URL-de-la-página">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/directory.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/logo.svg" alt="HTML Layout logo" width="50" height="50">
+        <span id="chamber-title">Ficus Chamber of Commerce</span>
+        <img src="images/icon.svg" alt="HTML Layout icon" width="50" height="50">
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" title="Home" id="home">Home</a></li>
+                <li><a href="#" title="Directory" id="directory">Directory</a></li>
+                <li><a href="#" title="Join" id="join">Join</a></li>
+                <li><a href="#" title="Discover" id="discover">Discover</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h1>Business Directory</h1>
+        <div class="menu">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        <article>
+            <div id="cards" class="grid"></div>
+        </article>
+    </main>
+    <footer>
+        <div>
+            <p>
+                Ficus Chamber of Commerce
+            </p>
+            <p>
+                Av. Bolognesi 878, Urb Los Ficus
+            </p>
+            <p>
+                info@ficuscc.org
+            </p>
+            <p>
+                (051) 555-4585
+            </p>
+        </div>
+        <div class="social-media">
+            <a href="#">
+                <img src="images/youtube.svg" width="60" height="60" alt="Youtube Icon">
+            </a>
+            <a href="#">
+                <img src="images/twitter.svg" width="60" height="60" alt="Twitter Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" width="60" height="60" alt="LinkedIn Icon">
+            </a>
+        </div>
+        <div>
+            <p>
+                WDD231 Class Project
+            </p>
+            <p>
+                Arturo Antonio Romero 🌊 Lima, Perú
+            </p>
+            <p>
+                <span id="currentyear"></span> 🍃 Ficus Chamber of Commerce
+            </p>
+            <p class="datelastmodified">
+                Last Modification:<span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
