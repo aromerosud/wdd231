@@ -4,64 +4,71 @@
             "name": "Corporación de Industrias Plasticas SA - CIPSA",
             "address": "Av. Los Frutales 419. Urb. El Artesano Ate. Lima – Perú",
             "phonenumber": "(511) 313-4200",
+            "email": "contacto@cipsa.com.pe",
             "website": "https://www.cipsa.com.pe/",
             "image": "images/cipsa.webp",
             "level": 1,
-            "information": ""
+            "information": "Leading manufacturer of plastic solutions for diverse industries."
         },
         {
             "name": "Saga Falabella",
             "address": "Av. Caminos del Inca N°670. Santiago de Surco",
             "phonenumber": "+51-54-215670 anexo 121",
+            "email": "servicioalcliente@falabella.com.pe",
             "website": "https://www.falabella.com.pe/falabella-pe",
             "image": "images/falabella.webp",
             "level": 1,
-            "information": ""
+            "information": "One of the largest retail chains offering quality products and services."
         },
         {
             "name": "Proserlim",
             "address": "Calle Santa Marina N° 6565, S.M.P",
             "phonenumber": "(01) 557-6490",
+            "email": "ventas@proserlim.pe",
             "website": "https://proserlim.pe/brand/sapolio/",
             "image": "images/proserlim.webp",
             "level": 2,
-            "information": ""
+            "information": "Professional cleaning and hygiene solutions for businesses."
         },
         {
             "name": "Alicorp",
             "address": "Av. Argentina 4793, Carmen de La Legua - Reynoso 07006",
             "phonenumber": "+511 315 0800",
+            "email": "contacto@alicorp.com.pe",
             "website": "https://www.alicorp.com.pe/pe/es",
             "image": "images/alicorp.webp",
             "level": 2,
-            "information": ""
+            "information": "Leading food and consumer goods company in Latin America."
         },
         {
             "name": "Stefanini Group",
             "address": "27100 W. 11 Mile Road Southfield, MI 48034 United States",
             "phonenumber": "+1 800 522 4451",
+            "email": "info@stefanini.com",
             "website": "https://stefanini.com/es",
             "image": "images/stefanini.webp",
             "level": 3,
-            "information": ""
+            "information": "Global technology company delivering innovative digital solutions."
         },
         {
             "name": "Mayorsa",
             "address": "Av. Esteban Salmón 655",
             "phonenumber": "972157530",
+            "email": "contacto@mayorsa.com.pe",
             "website": "https://mayorsa.com.pe/",
             "image": "images/mayorsa.webp",
             "level": 3,
-            "information": ""
+            "information": "Wholesale supermarket serving businesses and entrepreneurs."
         },
         {
             "name": "Inversiones La Cruz",
             "address": "Centro Comercial Santa Anita sótano, Ctra. Central 111, Santa Anita 15008",
             "phonenumber": "(01) 615 7070",
+            "email": "info@inversioneslacruz.com",
             "website": "https://www.inversioneslacruz.com/",
             "image": "images/inversioneslacruz.webp",
             "level": 3,
-            "information": ""
+            "information": "Commercial investments focused on retail and business development."
         }
     ]
 }

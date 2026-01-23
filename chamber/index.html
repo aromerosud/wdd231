@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Ficus Chamber of Commerce - Home</title>
+    <meta name="description"
+        content="Discover your local Chamber of Commerce and connect with businesses, services, events, and opportunities that help your community grow.">
+    <meta name="author" content="Arturo Romero">
+    <meta property="og:title" content="Business Home | Chamber of Commerce">
+    <meta property="og:description"
+        content="Connect with your local Chamber of Commerce and discover businesses, services, events, and opportunities in one trusted community hub.">
+    <meta property="og:image" content="https://aromerosud.github.io/wdd231/chamber/images/logo.svg">
+    <meta property="og:url" content="https://aromerosud.github.io/wdd231/chamber/index.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img id="logo-header" src="images/logo.svg" alt="HTML Layout logo" width="50" height="50">
+        <span id="chamber-title">Ficus Chamber of Commerce</span>
+        <img id="icon-header" src="images/icon.svg" alt="HTML Layout icon" width="50" height="50">
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home" id="home">Home</a></li>
+                <li><a href="directory.html" title="Directory" id="directory">Directory</a></li>
+                <li><a href="#" title="Join" id="join">Join</a></li>
+                <li><a href="#" title="Discover" id="discover">Discover</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-chamber-large.webp" media="(min-width: 750px)">
+                <img src="images/hero-chamber-small.webp"
+                    alt="Community and business environment represented by the Chamber of Commerce."
+                    fetchpriority="high">
+            </picture>
+
+            <div class="hero-text">
+                <h1>Your Local Chamber of Commerce</h1>
+                <p>Supporting businesses, promoting local growth, and building connections that strengthen our
+                    community.</p>
+                <a href="join.html" class="hero-btn">Become a Member</a>
+            </div>
+        </section>
+        <h2>Home</h2>
+        <section class="info-row">
+            <div class="card events">
+                <div class="card-header">
+                    <h2>Upcoming Events</h2>
+                </div>
+                <div class="card-body">
+                    <h3>Business Networking Breakfast</h3>
+                    <p class="event-date">March 15, 2025</p>
+                    <p>
+                        Connect with local business owners and build valuable professional
+                        relationships in your community.
+                    </p>
+                </div>
+            </div>
+            <div class="card weather">
+                <div class="card-header">
+                    <h2>Current Weather</h2>
+                </div>
+                <div class="card-body">
+                    <div class="weather-content">
+                        <div class="weather-icon">
+                            <img id="weather-icon" src="" alt="">
+                        </div>
+                        <div class="weather-details">
+                            <p class="temperature" id="current-temp"></p>
+                            <p id="weather-desc"></p>
+                            <p id="high-temp"></p>
+                            <p id="low-temp"></p>
+                            <p id="humidity"></p>
+                            <p id="sunrise"></p>
+                            <p id="sunset"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card forecast">
+                <div class="card-header">
+                    <h2>Weather Forecast</h2>
+                </div>
+
+                <div class="card-body">
+                    <div id="forecast-list"></div>
+                </div>
+            </div>
+        </section>
+        <section id="spotlights"></section>
+    </main>
+    <footer>
+        <div>
+            <p>
+                Ficus Chamber of Commerce
+            </p>
+            <p>
+                Av. Bolognesi 878, Urb Los Ficus
+            </p>
+            <p>
+                info@ficuscc.org
+            </p>
+            <p>
+                (051) 555-4585
+            </p>
+        </div>
+        <div class="social-media">
+            <a href="#">
+                <img src="images/youtube.svg" width="60" height="60" alt="Youtube Icon">
+            </a>
+            <a href="#">
+                <img src="images/twitter.svg" width="60" height="60" alt="Twitter Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" width="60" height="60" alt="LinkedIn Icon">
+            </a>
+        </div>
+        <div>
+            <p>
+                WDD231 Class Project
+            </p>
+            <p>
+                Arturo Antonio Romero 🌊 Lima, Perú
+            </p>
+            <p>
+                <span id="currentyear"></span> 🍃 Ficus Chamber of Commerce
+            </p>
+            <p class="datelastmodified">
+                Last Modification:<span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
