@@ -1,7 +1,7 @@
 :root {
     --primary-color: #1F3A5F;
     --secondary-color: #3A6EA5;
-    --accent-color: #F4A261;
+    --accent-color: #e76c07;
     --bg-color: #F8F9FA;
     --text-color: #1A1A1A;
 }
@@ -92,6 +92,12 @@ header img {
     background-color: #ffffff;
     color: var(--accent-color);
     font-weight: 700;
+}
+
+.navigation a.active {
+    background-color: #ffffff;
+    color: var(--accent-color);
+    font-weight: bold;
 }
 
 /* when the button is clicked - the open class is toggled (added/removed) */
@@ -309,7 +315,7 @@ footer img {
 
 .card-header {
     background-color: var(--secondary-color);
-    color: #ffffff; 
+    color: #ffffff;
     padding: 0.75rem 1rem;
     border-radius: 10px 10px 0 0;
 }
