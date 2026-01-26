@@ -1,7 +1,7 @@
 :root {
     --primary-color: #1F3A5F;
     --secondary-color: #3A6EA5;
-    --accent-color: #e76c07;
+    --accent-color: #f7934c;
     --bg-color: #F8F9FA;
     --text-color: #1A1A1A;
 }
@@ -90,13 +90,13 @@ header img {
 
 .navigation a:hover {
     background-color: #ffffff;
-    color: var(--accent-color);
+    color: var(--primary-color);
     font-weight: 700;
 }
 
 .navigation a.active {
     background-color: #ffffff;
-    color: var(--accent-color);
+    color: var(--primary-color);
     font-weight: bold;
 }
 
