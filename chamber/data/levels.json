@@ -1,0 +1,57 @@
+{
+  "membershipLevels": [
+    {
+      "id": 0,
+      "key": "np",
+      "title": "Non Profit Membership Level",
+      "cost": "$0",
+      "shortDescription": "Designed for non-profit organizations with no membership fee.",
+      "benefits": [
+        "Access to chamber networking events",
+        "Inclusion in the chamber directory",
+        "Community support and visibility"
+      ],
+      "ctaText": "Learn More"
+    },
+    {
+      "id": 1,
+      "key": "bronze",
+      "title": "Bronze Membership Level",
+      "cost": "$50 / year",
+      "shortDescription": "Entry-level membership with essential business benefits.",
+      "benefits": [
+        "All NP Membership benefits",
+        "Business listing with logo",
+        "Invitations to training sessions"
+      ],
+      "ctaText": "Learn More"
+    },
+    {
+      "id": 2,
+      "key": "silver",
+      "title": "Silver Membership Level",
+      "cost": "$100 / year",
+      "shortDescription": "Enhanced visibility and marketing opportunities.",
+      "benefits": [
+        "All Bronze Membership benefits",
+        "Homepage spotlight advertising",
+        "Discounts on chamber events"
+      ],
+      "ctaText": "Learn More"
+    },
+    {
+      "id": 3,
+      "key": "gold",
+      "title": "Gold Membership Level",
+      "cost": "$200 / year",
+      "shortDescription": "Premium membership with maximum exposure and benefits.",
+      "benefits": [
+        "All Silver Membership benefits",
+        "Priority event sponsorship",
+        "Featured promotions and advertising",
+        "Exclusive networking opportunities"
+      ],
+      "ctaText": "Learn More"
+    }
+  ]
+}

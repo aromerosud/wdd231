@@ -122,6 +122,33 @@
         margin: 0;
     }
 
+    /* Join */
+    .join-content {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .form-section,
+    .membership-section {
+        flex: 1;
+    }
+
+    .join-layout .form-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .join-layout #join-form {
+        width: 100%;
+        max-width: 450px;
+    }
+
+    .join-layout .form-section h2 {
+        width: 100%;
+        max-width: 450px;
+    }
+
 }
 
 @media screen and (min-width: 950px) {

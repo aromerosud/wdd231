@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficus Chamber of Commerce - Join</title>
+    <meta name="description"
+        content="Join the Chamber of Commerce and gain access to exclusive benefits, business networking, promotion opportunities, and business growth.">
+    <meta name="author" content="Arturo Romero">
+    <meta property="og:title" content="Join the Chamber of Commerce">
+    <meta property="og:description"
+        content="Become a member and enjoy exclusive benefits, business promotion, networking opportunities, and professional growth.">
+    <meta property="og:image" content="https://aromerosud.github.io/wdd231/chamber/images/logo.svg">
+    <meta property="og:url" content="https://aromerosud.github.io/wdd231/chamber/index.html">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img id="logo-header" src="images/logo.svg" alt="HTML Layout logo" width="50" height="50">
+        <span id="chamber-title">Ficus Chamber of Commerce</span>
+        <img id="icon-header" src="images/icon.svg" alt="HTML Layout icon" width="50" height="50">
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home" id="home">Home</a></li>
+                <li><a href="directory.html" title="Directory" id="directory">Directory</a></li>
+                <li><a href="join.html" title="Join" id="join" class="active">Join</a></li>
+                <li><a href="#" title="Discover" id="discover">Discover</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main class="join-layout">
+        <h1>Join</h1>
+        <div class="join-content">
+            <section class="form-section">
+                <h2 class="title-section">Membership Application Form</h2>
+                <form id="join-form" method="get" action="thankyou.html">
+                    <label>
+                        First Name*
+                        <input type="text" name="fname" title="Enter your first name" autocomplete="given-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Last Name*
+                        <input type="text" name="lname" title="Enter your last name" autocomplete="family-name"
+                            required>
+                    </label>
+
+                    <label>
+                        Email*
+                        <input type="email" name="email" title="Enter your email address"
+                            placeholder="someone@gmail.com" autocomplete="email" required>
+                    </label>
+
+                    <label>
+                        Mobile Phone*
+                        <input type="tel" name="phone" title="Enter your mobile phone number" autocomplete="tel"
+                            required>
+                    </label>
+
+                    <label>
+                        Organization*
+                        <input type="text" name="organization" title="Enter your organization's name"
+                            autocomplete="organization" required>
+                    </label>
+
+                    <label>
+                        Organizational Title*
+                        <input type="text" name="otitle" title="Enter your organizational title (minimum 7 characters)"
+                            autocomplete="organization-title" pattern="^[A-Za-z\s-]{7,}$" required>
+                    </label>
+
+                    <fieldset>
+                        <legend>Membership Level*</legend>
+
+                        <label>
+                            <input type="radio" name="level" value="np" required>
+                            NP Membership (Non Profit)
+                        </label>
+
+                        <label>
+                            <input type="radio" name="level" value="bronze">
+                            Bronze Membership
+                        </label>
+
+                        <label>
+                            <input type="radio" name="level" value="silver">
+                            Silver Membership
+                        </label>
+
+                        <label>
+                            <input type="radio" name="level" value="gold">
+                            Gold Membership
+                        </label>
+                    </fieldset>
+
+                    <label>
+                        Business Description
+                        <textarea name="bdescription" title="Enter an organization description" rows="5"></textarea>
+                    </label>
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input type="submit" value="Apply for Membership">
+
+                </form>
+            </section>
+            <section class="membership-section">
+                <h2 class="title-section">Membership Levels</h2>
+                <div id="membership-cards" class="membership-cards"></div>
+                <dialog id="membership-details"></dialog>
+            </section>
+        </div>
+
+    </main>
+    <footer>
+        <div>
+            <p>
+                Ficus Chamber of Commerce
+            </p>
+            <p>
+                Av. Bolognesi 878, Urb Los Ficus
+            </p>
+            <p>
+                info@ficuscc.org
+            </p>
+            <p>
+                (051) 555-4585
+            </p>
+        </div>
+        <div class="social-media">
+            <a href="#">
+                <img src="images/youtube.svg" width="60" height="60" alt="Youtube Icon">
+            </a>
+            <a href="#">
+                <img src="images/twitter.svg" width="60" height="60" alt="Twitter Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" width="60" height="60" alt="LinkedIn Icon">
+            </a>
+        </div>
+        <div>
+            <p>
+                WDD231 Class Project
+            </p>
+            <p>
+                Arturo Antonio Romero 🌊 Lima, Perú
+            </p>
+            <p>
+                <span id="currentyear"></span> 🍃 Ficus Chamber of Commerce
+            </p>
+            <p class="datelastmodified">
+                Last Modification:<span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
