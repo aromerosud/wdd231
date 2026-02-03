@@ -1,0 +1,44 @@
+.color-swatch {
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    border: 1px solid #ccc;
+}
+
+.primary-color {
+    background-color: #2C7BE5;
+}
+
+.secundary-color {
+    background-color: #F4A261;
+}
+
+.background-color {
+    background-color: #F8F9FA;
+}
+
+
+body {
+    font-family: "Lato", sans-serif;
+    margin: 20px;
+    line-height: 1.7;
+}
+
+h1, h2, h3 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.title-font {
+    font-family: "Poppins", sans-serif;
+}
+
+.body-font {
+    font-family: "Lato", sans-serif;
+}
