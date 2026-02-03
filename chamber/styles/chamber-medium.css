@@ -1,0 +1,22 @@
+@media (min-width: 641px) {
+    .discover-card {
+        grid-template-columns: 1fr 2fr;
+        grid-template-areas:
+            "title   title"
+            "image   content"
+            "button  button";
+        align-items: start;
+    }
+
+    .card-button {
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+
+    /* Hover effect only for non mobile */
+    .card-image img:hover {
+        transform: scale(1.03);
+        filter: brightness(1.05);
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+}

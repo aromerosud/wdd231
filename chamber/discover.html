@@ -4,26 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Ficus Chamber of Commerce - Directory</title>
+    <title>Ficus Chamber of Commerce</title>
     <meta name="description"
-        content="Explore the Chamber of Commerce business directory and find local businesses, professional services, and member companies in one place.">
+        content="Discover key information about our city, its economy, events, statistics, and investment opportunities through the Chamber of Commerce.">
     <meta name="author" content="Arturo Romero">
-    <meta property="og:title" content="Business Directory | Chamber of Commerce">
+    <meta property="og:title" content="Discover Our City | Chamber of Commerce">
     <meta property="og:description"
-        content="Find local businesses, professional services, and Chamber members all in one trusted business directory.">
+        content="Learn about our city’s economy, events, statistics, and investment opportunities supported by the Chamber of Commerce.">
     <meta property="og:image" content="https://aromerosud.github.io/wdd231/chamber/images/logo.svg">
-    <meta property="og:url" content="https://aromerosud.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://aromerosud.github.io/wdd231/chamber/index.html">
     <link rel="icon" href="images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/chamber-small.css">
+    <link rel="stylesheet" href="styles/chamber-medium.css">
     <link rel="stylesheet" href="styles/chamber-larger.css">
     <script src="scripts/navigation.js" defer></script>
     <script src="scripts/date.js" defer></script>
-    <script src="scripts/directory.js" defer></script>
+    <script src="scripts/discover.js" type="module" defer></script>
+    <script src="scripts/modal.js" type="module" defer></script>
 </head>
 
 <body>
@@ -36,22 +37,19 @@
         <nav>
             <ul class="navigation">
                 <li><a href="index.html" title="Home" id="home">Home</a></li>
-                <li><a href="directory.html" title="Directory" id="directory" class="active">Directory</a></li>
+                <li><a href="directory.html" title="Directory" id="directory">Directory</a></li>
                 <li><a href="join.html" title="Join" id="join">Join</a></li>
-                <li><a href="discover.html" title="Discover" id="discover">Discover</a></li>
+                <li><a href="discover.html" title="Discover" id="discover" class="active">Discover</a></li>
             </ul>
         </nav>
 
     </header>
-    <main>
-        <h1>Business Directory</h1>
-        <div class="menu">
-            <button id="grid">Grid</button>
-            <button id="list">List</button>
-        </div>
-        <article>
-            <div id="cards" class="grid"></div>
-        </article>
+    <main class="join-layout">
+        <h1>Discover Ficus - Santa Anita</h1>
+        <!-- localStorage -->
+        <div id="visitorMessage" class="visitor-message"></div>
+        <section class="discover-grid" id="discoverGrid"></section>
+        <dialog id="discoverDialog"></dialog>
     </main>
     <footer>
         <div>
