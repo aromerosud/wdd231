@@ -710,7 +710,7 @@ footer {
 }
 
 /* Button */
-.btn-primary {
+.primary-button {
     margin-top: 0.5rem;
     padding: 0.7rem;
     border: none;
@@ -722,7 +722,7 @@ footer {
     transition: background 0.2s ease, transform 0.2s ease;
 }
 
-.btn-primary:hover {
+.primary-button:hover {
     background: #f59e0b;
     transform: translateY(-1px);
 }
