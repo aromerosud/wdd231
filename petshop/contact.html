@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PawCare Pet Shop - Contact</title>
+    <meta name="description"
+        content="Get in touch with PawCare Pet Shop to ask questions, schedule services, or learn more about how we can care for your pets.">
+    <meta name="author" content="Arturo Romero">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Contact PawCare — We’re Here for You & Your Pet">
+    <meta property="og:description"
+        content="Have questions or want to book a service? Reach out to PawCare Pet Shop and let us help take care of your furry friend. ❤️🐾">
+    <meta property="og:image" content="https://aromerosud.github.io/wdd231/petshop/images/logo.svg">
+    <meta property="og:url" content="https://aromerosud.github.io/wdd231/petshop/index.html">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/petshop-small.css">
+    <link rel="stylesheet" href="styles/petshop-larger.css">
+
+    <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img id="logo-header" src="images/logo.svg" alt="PawCare Pet Shop logo" width="50" height="50">
+        <span id="petshop-title">PawCare Pet Shop</span>
+        <img id="icon-header" src="images/icon.svg" alt="Pet shop icon" width="50" height="50">
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home" id="home">Home</a></li>
+                <li><a href="products.html" title="Products" id="products">Products</a></li>
+                <li><a href="information.html" title="Info" id="info">Pets Info</a></li>
+                <li><a href="contact.html" title="Contact" id="contact" class="active">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-layout">
+        <h1>Contact PawCare Pet Shop</h1>
+
+        <section class="contact-intro">
+            <p>
+                Have a question, need help, or want to book a service? Fill out the form and our team will contact you
+                shortly.
+            </p>
+        </section>
+
+        <section class="contact-grid">
+            <!-- Contact Info -->
+            <div class="contact-info">
+                <h2>Our Information</h2>
+
+                <p><strong>Address:</strong> Santa Anita, Lima, Peru</p>
+                <p><strong>Phone:</strong> +51 999 888 777</p>
+                <p><strong>Email:</strong> info@pawcare.com</p>
+                <p><strong>Hours:</strong> Mon – Sat: 9:00 AM – 7:00 PM</p>
+
+                <div class="contact-extra">
+                    <h3>Why Contact Us?</h3>
+                    <ul>
+                        <li>Book grooming and wellness services</li>
+                        <li>Ask about pet care and nutrition</li>
+                        <li>Product availability and pricing</li>
+                        <li>General pet care questions</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form">
+                <h2>Send Us a Message</h2>
+
+                <form method="get" action="thankyou.html" id="contactForm">
+                    <label>
+                        Full Name:
+                        <input type="text" name="fullname" required placeholder="Your full name">
+                    </label>
+
+                    <label>
+                        Email Address:
+                        <input type="email" name="email" required placeholder="you@example.com">
+                    </label>
+
+                    <label>
+                        Phone Number:
+                        <input type="tel" name="phone" placeholder="+51 999 999 999">
+                    </label>
+
+                    <label>
+                        Reason for Contact:
+                        <select name="reason" required>
+                            <option value="">Select an option</option>
+                            <option value="products">Products</option>
+                            <option value="grooming">Grooming</option>
+                            <option value="veterinary">Veterinary Services</option>
+                            <option value="training">Training</option>
+                            <option value="general">General Question</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Preferred Contact Method:
+                        <select name="contactMethod" required>
+                            <option value="">Select one</option>
+                            <option value="email">Email</option>
+                            <option value="phone">Phone</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        Message:
+                        <textarea name="message" rows="5" required placeholder="Tell us how we can help you"></textarea>
+                    </label>
+
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="newsletter">
+                        Subscribe to our pet care newsletter
+                    </label>
+
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div>
+            <p>PawCare Pet Shop</p>
+            <p>Av. Bolognesi 878, Urb Los Ficus</p>
+            <p>info@pawcarepetshop.com</p>
+            <p>(051) 555-4585</p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.youtube.com/">
+                <img src="images/youtube.svg" width="60" height="60" alt="Youtube Icon">
+            </a>
+            <a href="https://x.com/">
+                <img src="images/twitter.svg" width="60" height="60" alt="Twitter Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" width="60" height="60" alt="LinkedIn Icon">
+            </a>
+        </div>
+
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Arturo Antonio Romero 🌊 Lima, Perú</p>
+            <p>
+                <span id="currentyear"></span> 🐶🦴🐱 PawCare Pet Shop
+            </p>
+            <p class="datelastmodified">
+                Last Modification: <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

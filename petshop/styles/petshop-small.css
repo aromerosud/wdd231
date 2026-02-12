@@ -1,0 +1,795 @@
+/* PawCare Pet Shop - Small */
+
+:root {
+    --primary-purple: #3f1769;
+    --accent-yellow: #ffd24a;
+    --light-bg: #F5F3FA;
+    --dark-text: #2C2C2C;
+    --card-bg: #FFFFFF;
+    --card-sp: #7e4602;
+    --blue-card-sp: #042249;
+}
+
+/* Base - Small */
+body {
+    font-family: 'Poppins', 'Lato';
+    background-color: var(--light-bg);
+    color: var(--dark-text);
+    margin: 0;
+}
+
+/* Header - Small */
+header {
+    position: relative;
+    background-color: var(--primary-purple);
+    color: white;
+    display: grid;
+    grid-template-columns: auto 1fr auto auto;
+    align-items: center;
+    padding: 0.75rem 1rem;
+    gap: 0.5rem;
+}
+
+#logo-header {
+    grid-column: 1;
+}
+
+#petshop-title {
+    grid-column: 2;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-left: 0.5rem;
+}
+
+#icon-header {
+    grid-column: 3;
+    justify-self: end;
+}
+
+#menu {
+    grid-column: 4;
+    justify-self: end;
+    font-size: 2rem;
+    border: 0;
+    background: none;
+    color: #fff;
+}
+
+/* Hamburger icon */
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "✕";
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    color: #fff;
+    z-index: 1000;
+}
+
+/* Navigation - header */
+nav {
+    grid-column: 1 / -1;
+}
+
+/* Navigation links */
+.navigation {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: var(--primary-purple);
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', 'Lato', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* Menu open */
+.navigation.open a {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    background-color: var(--accent-yellow);
+    color: var(--primary-purple);
+}
+
+/* Hero - Small */
+.hero {
+    position: relative;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.hero-text {
+    background-color: var(--primary-purple);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+.hero-text h1 {
+    margin-top: 0;
+    color: var(--accent-yellow);
+    font-size: 1.4rem;
+}
+
+.hero-btn {
+    display: inline-block;
+    margin-top: 0.75rem;
+    background-color: var(--accent-yellow);
+    color: var(--primary-purple);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Main - Small */
+main {
+    padding: 1rem;
+}
+
+main h2 {
+    color: var(--primary-purple);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Cards - Small */
+.info-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+.card {
+    background-color: var(--card-bg);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: var(--primary-purple);
+    color: white;
+    padding: 0.6rem 0.8rem;
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 1rem;
+    color: #ffffff;
+}
+
+.card-body {
+    padding: 0.8rem;
+}
+
+.event-date {
+    color: var(--primary-purple);
+    font-weight: bold;
+}
+
+/* Footer - Small */
+footer {
+    background-color: var(--primary-purple);
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.social-media {
+    text-align: center;
+    align-content: center;
+}
+
+.social-media img {
+    width: 40px;
+    height: 40px;
+}
+
+/* Cards Weather */
+
+.weather-content {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1rem;
+    align-items: center;
+}
+
+.weather-icon img {
+    width: 150px;
+    height: 150px;
+    max-width: 100%;
+}
+
+.weather-details p {
+    margin: 0.2rem 0;
+    font-size: 0.95rem;
+}
+
+.temperature {
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+#forecast-list p {
+    margin: 0.4rem 0;
+    font-size: 1rem;
+}
+
+.info-row {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+#pet-advice {
+    grid-column: 1 / -1;
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    background: #f5f7fa;
+    padding: 0.6rem 0.8rem;
+    border-radius: 6px;
+}
+
+.forecast-day {
+    margin-bottom: 0.75rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid #eee;
+}
+
+.forecast-day:last-child {
+    border-bottom: none;
+}
+
+.pet-tip {
+    font-size: 0.85rem;
+    color: #555;
+    margin-left: 0.5rem;
+}
+
+/* Pet Shop - Spotlights */
+#spotlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.2rem;
+    padding: 1rem;
+}
+
+/* Card */
+.spotlight-card {
+    border: 1px solid #e0e0e0;
+    border-top: 5px solid var(--card-sp);
+    border-radius: 12px;
+    padding: 1rem;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.spotlight-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.spotlight-card h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.member-level {
+    font-weight: 600;
+    color: var(--card-sp);
+    font-size: 0.85rem;
+}
+
+/* Content */
+.spotlight-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 0.75rem;
+    text-align: center;
+}
+
+.spotlight-content img {
+    max-width: 100px;
+    margin: 0 auto;
+    border-radius: 50%;
+    background: #f9f9f9;
+    padding: 0.5rem;
+}
+
+/* Info */
+.spotlight-info p {
+    margin: 0.25rem 0;
+    font-size: 0.85rem;
+    color: #555;
+}
+
+.spotlight-desc {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* Links */
+.spotlight-card a {
+    color: var(--blue-card-sp);
+    text-decoration: none;
+    word-break: break-word;
+}
+
+.spotlight-card a:hover {
+    text-decoration: underline;
+}
+
+/* Products Layout */
+.products-layout .menu {
+    margin: 1rem 0;
+}
+
+/* Grid & List */
+#products-cards.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+#products-cards.list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Product - Card */
+.product-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 1rem;
+    background: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.product-card img {
+
+    margin: 0 auto 0.5rem;
+}
+
+.product-brand {
+    font-size: 0.85rem;
+    color: #777;
+}
+
+.product-price {
+    font-weight: bold;
+    color: var(--card-sp);
+}
+
+.details-btn {
+    margin-top: 0.5rem;
+    padding: 0.4rem 0.8rem;
+    border: none;
+    border-radius: 6px;
+    background: #ffb703;
+    cursor: pointer;
+}
+
+/* Products List View */
+
+#products-cards.list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+#products-cards.list .product-card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 0.75rem;
+    background-color: #f6f6f6;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    text-align: left;
+}
+
+/* Hide image - list view */
+#products-cards.list img {
+    display: none;
+}
+
+/* Compact text for list */
+#products-cards.list h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+#products-cards.list p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+#products-cards.list .price {
+    font-weight: 700;
+    color: #0a4ea3;
+}
+
+/* Modal */
+#productDialog::backdrop {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#productDialog .modal-content {
+    max-width: 500px;
+}
+
+.close-modal {
+    float: right;
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+/* View Toggle Menu */
+.products-layout .menu {
+    display: flex;
+    justify-content: center;
+    gap: 0.75rem;
+    margin: 1.5rem 0;
+}
+
+/* Base button */
+.view-btn {
+    padding: 0.4rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 999px;
+    background-color: #ffffff;
+    color: #333;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* Hover - Temporary */
+.view-btn:hover {
+    background-color: #f2f2f2;
+    border-color: #bbb;
+}
+
+/* Active real selection */
+.view-btn.active {
+    background-color: var(--card-sp);
+    border-color: #693b03;
+    color: #fff;
+}
+
+/* Pets Gallery */
+.pets-layout {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.pets-layout h1 {
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+}
+
+.pets-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+}
+
+.pets-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.5rem;
+}
+
+.pet-card {
+    background: #ffffff;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.pet-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 26px rgba(0, 0, 0, 0.18);
+}
+
+.pet-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.pet-card .pet-info {
+    padding: 1rem;
+}
+
+.pet-card h3 {
+    margin: 0 0 0.5rem;
+    font-size: 1.2rem;
+}
+
+.pet-card p {
+    margin: 0.25rem 0;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.pet-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+}
+
+.pet-badge {
+    background: #f1f5f9;
+    color: #333;
+    font-size: 0.7rem;
+    padding: 0.25rem 0.5rem;
+    border-radius: 999px;
+}
+
+/* Dialog */
+
+.pet-dialog {
+    border: none;
+    border-radius: 16px;
+    padding: 0;
+    max-width: 700px;
+    width: 90%;
+    max-height: 85vh;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.pet-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.65);
+}
+
+.pet-dialog .modal-content {
+    padding: 1.5rem;
+    overflow-y: auto;
+    max-height: 85vh;
+}
+
+.pet-dialog img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: contain;
+    background: #f8fafc;
+    border-radius: 12px;
+    margin: 1rem 0;
+}
+
+.pet-dialog h2 {
+    margin-top: 0;
+}
+
+.pet-dialog ul {
+    padding-left: 1.2rem;
+    margin: 1rem 0;
+}
+
+.pet-dialog li {
+    margin-bottom: 0.4rem;
+    font-size: 0.95rem;
+}
+
+.close-modal {
+    position: sticky;
+    top: 0;
+    float: right;
+    background: #f1f5f9;
+    border: none;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    font-size: 1rem;
+    line-height: 1;
+}
+
+.close-modal:hover {
+    background: #e2e8f0;
+}
+
+/* Button */
+.learn-more {
+    margin-top: 0.75rem;
+    padding: 0.5rem 0.75rem;
+    border: none;
+    border-radius: 8px;
+    background: #fbbf24;
+    color: #1f2933;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.learn-more:hover {
+    background: #f59e0b;
+    transform: translateY(-1px);
+}
+
+
+/* contact */
+.contact-layout {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.contact-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+/* Info box */
+.contact-info {
+    background: #f8fafc;
+    padding: 1.5rem;
+    border-radius: 16px;
+}
+
+.contact-extra ul {
+    padding-left: 1.2rem;
+}
+
+.contact-extra li {
+    margin-bottom: 0.4rem;
+}
+
+/* Form */
+.contact-form {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-form label {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    gap: 0.3rem;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+    padding: 0.5rem 0.6rem;
+    border-radius: 8px;
+    border: 1px solid #cbd5e1;
+    font-size: 0.9rem;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #fbbf24;
+    box-shadow: 0 0 0 2px rgba(251, 191, 36, 0.2);
+}
+
+.checkbox-label {
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+/* Button */
+.btn-primary {
+    margin-top: 0.5rem;
+    padding: 0.7rem;
+    border: none;
+    border-radius: 10px;
+    background: #fbbf24;
+    color: #1f2933;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background: #f59e0b;
+    transform: translateY(-1px);
+}
+
+/* Thankyou */
+.thankyou-layout {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.thankyou-intro {
+    margin-bottom: 2rem;
+}
+
+.thankyou-card {
+    background: #ffffff;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.thankyou-card h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.thankyou-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0;
+}
+
+.thankyou-card li {
+    padding: 0.4rem 0;
+    border-bottom: 1px solid #e5e7eb;
+    font-size: 0.9rem;
+}
+
+.thankyou-time {
+    text-align: center;
+    margin: 1rem 0;
+    font-size: 0.85rem;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PawCare Pet Shop - Products</title>
+    <meta name="description"
+        content="Explore our wide selection of pet products, including food, toys, accessories, and essentials to keep your pets healthy and happy.">
+    <meta name="author" content="Arturo Romero">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Shop for Your Pet — PawCare Pet Shop">
+    <meta property="og:description"
+        content="Find food, toys, accessories, and essentials your pets will love. Quality products to keep tails wagging and whiskers happy. 🐶🐱">
+    <meta property="og:image" content="https://aromerosud.github.io/wdd231/petshop/images/logo.svg">
+    <meta property="og:url" content="https://aromerosud.github.io/wdd231/petshop/index.html">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/petshop-small.css">
+    <link rel="stylesheet" href="styles/petshop-larger.css">
+
+    <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/products.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <img id="logo-header" src="images/logo.svg" alt="PawCare Pet Shop logo" width="50" height="50">
+        <span id="petshop-title">PawCare Pet Shop</span>
+        <img id="icon-header" src="images/icon.svg" alt="Pet shop icon" width="50" height="50">
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home" id="home">Home</a></li>
+                <li><a href="products.html" title="Products" id="products" class="active">Products</a></li>
+                <li><a href="information.html" title="Info" id="info">Pets Info</a></li>
+                <li><a href="contact.html" title="Contact" id="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="products-layout">
+        <h1>Pet Products</h1>
+
+        <section class="products-intro">
+            <p>
+                Browse our selection of high-quality pet products designed to keep your pets healthy, active, and happy.
+            </p>
+        </section>
+
+        <!-- View toggle -->
+        <div class="menu">
+            <button id="grid" class="view-btn">Grid</button>
+            <button id="list" class="view-btn">List</button>
+        </div>
+
+        <!-- Dynamic products -->
+        <section>
+            <div id="products-cards" class="grid"></div>
+        </section>
+
+        <!-- Product details modal -->
+        <dialog id="productDialog">
+            <div class="modal-content">
+                <button class="close-modal" id="closeProductDialog" aria-label="Close dialog">✖</button>
+                <div id="productDetails"></div>
+            </div>
+        </dialog>
+    </main>
+
+    <footer>
+        <div>
+            <p>PawCare Pet Shop</p>
+            <p>Av. Bolognesi 878, Urb Los Ficus</p>
+            <p>info@pawcarepetshop.com</p>
+            <p>(051) 555-4585</p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.youtube.com/">
+                <img src="images/youtube.svg" width="60" height="60" alt="Youtube Icon">
+            </a>
+            <a href="https://x.com/">
+                <img src="images/twitter.svg" width="60" height="60" alt="Twitter Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" width="60" height="60" alt="LinkedIn Icon">
+            </a>
+        </div>
+
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Arturo Antonio Romero 🌊 Lima, Perú</p>
+            <p>
+                <span id="currentyear"></span> 🐶🦴🐱 PawCare Pet Shop
+            </p>
+            <p class="datelastmodified">
+                Last Modification: <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PawCare Pet Shop - Home</title>
+    <meta name="description"
+        content="PawCare Pet Shop offers quality products and grooming services to keep your pets happy, healthy, and cared for.">
+    <meta name="author" content="Arturo Romero">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Happy Paws Petshop | Pet Care & Accessories">
+    <meta property="og:description"
+        content="Everything your pet needs in one place. From quality products to loving grooming services, PawCare is here to care for your furry family. 🐾">
+    <meta property="og:image" content="https://aromerosud.github.io/wdd231/petshop/images/logo.svg">
+    <meta property="og:url" content="https://aromerosud.github.io/wdd231/petshop/index.html">
+
+    <link rel="icon" href="images/favicon.ico">
+
+    <!-- Fonts & Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/petshop-small.css">
+    <link rel="stylesheet" href="styles/petshop-larger.css">
+
+    <!-- Scripts -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlights.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <img id="logo-header" src="images/logo.svg" alt="PawCare Pet Shop logo" width="50" height="50">
+        <span id="petshop-title">PawCare Pet Shop</span>
+        <img id="icon-header" src="images/icon.svg" alt="Pet shop icon" width="50" height="50">
+        <button id="menu" aria-label="Toggle navigation menu"></button>
+
+        <nav>
+            <ul class="navigation">
+                <li><a href="index.html" title="Home" id="home" class="active">Home</a></li>
+                <li><a href="products.html" title="Products" id="products">Products</a></li>
+                <li><a href="information.html" title="Info" id="info">Pets Info</a></li>
+                <li><a href="contact.html" title="Contact" id="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero-petshop-large.webp" media="(min-width: 750px)">
+                <img src="images/hero-petshop-small.webp" alt="Happy pets and pet care products at PawCare Pet Shop."
+                    fetchpriority="high">
+            </picture>
+
+            <div class="hero-text">
+                <h1>Caring for Your Pets Like Family</h1>
+                <p>Quality products, grooming services, and everything your pet needs to stay happy and healthy.</p>
+                <a href="products.html" class="hero-btn">Shop Now</a>
+            </div>
+        </section>
+
+        <h2>Home</h2>
+
+        <section class="info-row">
+            <!-- Promotions / Events -->
+            <div class="card events">
+                <div class="card-header">
+                    <h2>Special Offers</h2>
+                </div>
+                <div class="card-body">
+                    <h3>Free Grooming Check</h3>
+                    <p class="event-date">This Month</p>
+                    <p>
+                        Bring your pet for a free grooming evaluation and get personalized care recommendations.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Weather -->
+            <div class="card weather">
+                <div class="card-header">
+                    <h2>Weather for Pet Walks</h2>
+                </div>
+                <div class="card-body">
+                    <div class="weather-content">
+                        <div class="weather-icon">
+                            <img id="weather-icon" src="images/weather-placeholder.svg" alt="Current weather icon"
+                                width="100" height="100">
+                        </div>
+                        <div class="weather-details">
+                            <p class="temperature" id="current-temp"></p>
+                            <p id="weather-desc"></p>
+                            <p id="high-temp"></p>
+                            <p id="low-temp"></p>
+                            <p id="humidity"></p>
+                            <p id="sunrise"></p>
+                            <p id="sunset"></p>
+                        </div>
+                        <p id="pet-advice"></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Forecast -->
+            <div class="card forecast">
+                <div class="card-header">
+                    <h2>Pet Care Tips</h2>
+                </div>
+                <div class="card-body">
+                    <div id="forecast-list">
+                        <p>Remember to keep your pets hydrated and protected during hot days.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <h2>🐾 Pet Shop Spotlights</h2>
+        <section id="spotlights"></section>
+    </main>
+
+    <footer>
+        <div>
+            <p>PawCare Pet Shop</p>
+            <p>Av. Bolognesi 878, Urb Los Ficus</p>
+            <p>info@pawcarepetshop.com</p>
+            <p>(051) 555-4585</p>
+        </div>
+
+        <div class="social-media">
+            <a href="https://www.youtube.com/">
+                <img src="images/youtube.svg" width="60" height="60" alt="Youtube Icon">
+            </a>
+            <a href="https://x.com/">
+                <img src="images/twitter.svg" width="60" height="60" alt="Twitter Icon">
+            </a>
+            <a href="https://linkedin.com">
+                <img src="images/linkedin.svg" width="60" height="60" alt="LinkedIn Icon">
+            </a>
+        </div>
+
+        <div>
+            <p>WDD231 Class Project</p>
+            <p>Arturo Antonio Romero 🌊 Lima, Perú</p>
+            <p>
+                <span id="currentyear"></span> 🐶🦴🐱 PawCare Pet Shop
+            </p>
+            <p class="datelastmodified">
+                Last Modification: <span id="lastModified"></span>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
