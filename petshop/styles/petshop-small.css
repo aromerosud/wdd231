@@ -769,3 +769,13 @@ footer {
     margin: 1rem 0;
     font-size: 0.85rem;
 }
+
+/* Video Demo */
+.video-link a {
+    color: var(--accent-yellow);
+}
+
+.video-link a:hover,
+.video-link a:focus {
+    text-decoration: underline;
+}
